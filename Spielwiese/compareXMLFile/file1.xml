@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="missiondata" nsURI="http://com.airbus.ds.mss.core.mp.missiondata.2.0.0.6" nsPrefix="com.airbus.ds.mss.core">
+	<eAnnotations source="http://www.eclipse.org/edapt">
+		<details key="historyURI" value="../../com.airbus.ds.mss.efa.mp.missiondata/model/EFAMissionData.history" />
+	</eAnnotations>
+	<eSubpackages name="dm" nsURI="http://com.airbus.ds.mss.core.mp.missiondata.2.0.0.6/Dm" nsPrefix="com.airbus.ds.mss.core.mp.missiondata">
+		<eClassifiers xsi:type="ecore:EClass" name="DMReference">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="DMBasicLoadReference" eSuperTypes="#//dm/DMReference">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="dmObject" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject" transient="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="DMDafifReference" eSuperTypes="#//dm/DMReference">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="dmObject" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject" transient="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="DMRouteReference" eSuperTypes="#//dm/DMReference">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="dmObject" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject" transient="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="DMFligthPlanReference" eSuperTypes="#//dm/DMReference">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="dmObject" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject" transient="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="DMAcoReference" eSuperTypes="#//dm/DMReference">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="dmObject" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject" transient="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="DMOptaskLinkReference" eSuperTypes="#//dm/DMReference">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="dmObject" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject" transient="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="DMATOReference" eSuperTypes="#//dm/DMReference">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="dmObject" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject" transient="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="DMEwLibraryReference" eSuperTypes="#//dm/DMReference">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="dmObject" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject" transient="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="DMAircraftConfigLoad" eSuperTypes="#//dm/DMReference">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="dmObject" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject" transient="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="DMMidsDefaultLibraryReference" eSuperTypes="#//dm/DMReference">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="dmObject" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject" transient="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="DMMidsIdSetReference" eSuperTypes="#//dm/DMReference">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="dmObject" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject" transient="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="DMDmgLddpReference" eSuperTypes="#//dm/DMReference">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="dmObject" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject" transient="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="DMWaypointListReference" eSuperTypes="#//dm/DMReference">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="dmObject" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject" transient="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="DMWaypointReference" eSuperTypes="#//dm/DMReference">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="dmObject" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject" transient="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="DMTarget" eSuperTypes="#//dm/DMReference" />
+		<eClassifiers xsi:type="ecore:EClass" name="DMFaor" eSuperTypes="#//dm/DMReference" />
+	</eSubpackages>
+	<eSubpackages name="baseTypes" nsURI="http://com.airbus.ds.mss.core.mp.missiondata.2.0.0.6/BaseTypes" nsPrefix="com.airbus.ds.mss.core.mp.missiondata">
+		<eClassifiers xsi:type="ecore:EClass" name="MSSDate">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="localDate" eType="#//baseTypes/LocalDate" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="MSSTime">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="localTime" eType="#//baseTypes/LocalTime" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="timeZone" eType="#//baseTypes/unit/TimeZones" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="MSSDateTime">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="localDateTime" eType="#//baseTypes/LocalDateTime" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="timeZone" eType="#//baseTypes/unit/TimeZones" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="MSSFont">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="style" eType="#//baseTypes/FontStyles" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="size" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="MSSColor">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="red" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" defaultValueLiteral="0" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="green" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" defaultValueLiteral="0" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="blue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" defaultValueLiteral="0" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="alpha" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" defaultValueLiteral="0" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="Coordinate">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="latitude" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="longitude" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="system" eType="#//baseTypes/CoordinateSystems" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="format" eType="#//baseTypes/CoordinateFormats" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="Unit">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="ClassificationLevel">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="alwaysUsable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="color" eType="#//baseTypes/MSSColor" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="comment" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="printPosition" eType="#//baseTypes/ClassificationPrintPosition" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="sticky" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="text" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="GeoPoint">
+			<eStructuralFeatures xsi:type="ecore:EReference" name="coordinate" lowerBound="1" eType="#//baseTypes/Coordinate" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="elevation" lowerBound="1" eType="#//baseTypes/unit/Altitude" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="magneticVariation" lowerBound="1" eType="#//baseTypes/unit/Angle" containment="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="MssPoint" eSuperTypes="#//baseTypes/GeoPoint" />
+		<eClassifiers xsi:type="ecore:EClass" name="CreationInfo">
+			<eStructuralFeatures xsi:type="ecore:EReference" name="refCoordinate" lowerBound="1" eType="#//baseTypes/Coordinate" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="sourceType" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="refIdentifier" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="Bearing" eType="#//baseTypes/unit/RelativeGeoDirection" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="Range" eType="#//baseTypes/unit/Distance" containment="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="RoutePoint" eSuperTypes="#//baseTypes/MssPoint">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="infoBox" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="piCaps" upperBound="-1" eType="#//route/PiCap" eOpposite="#//route/PiCap/mssPoint" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="BullseyeCreationInfo">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="sourceType" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="refIdentifier" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="Bearing" eType="#//baseTypes/unit/RelativeGeoDirection" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="Range" eType="#//baseTypes/unit/Distance" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="entryMillis" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="Bullseye" eSuperTypes="#//baseTypes/GeoPoint">
+			<eStructuralFeatures xsi:type="ecore:EReference" name="parent" eType="#//mission/Mission" eOpposite="#//mission/Mission/bullseyes" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="preset" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="label" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="outerCircleRadius" eType="#//baseTypes/unit/Distance" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="circleCount" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="quadrantSections" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="magVar" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="active" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="heading" eType="#//baseTypes/Heading" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="displayDegrees" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="displayLabels" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="lineWidth" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="lineColor" eType="#//baseTypes/MSSColor" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="haloColor" eType="#//baseTypes/MSSColor" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="labelColor" eType="#//baseTypes/MSSColor" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="labelFontSize" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="labelFontStyle" eType="#//baseTypes/FontStyles" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="degreesFontSize" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="degreesFontStyle" eType="#//baseTypes/FontStyles" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="bullseyeCreationInfo" eType="#//baseTypes/BullseyeCreationInfo" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="modified" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="Faor">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="preset" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="refCoord" eType="#//baseTypes/Coordinate" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="magVar" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="upperLeftCorner" eType="#//baseTypes/Coordinate" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="upperRightCorner" eType="#//baseTypes/Coordinate" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="lowerRightCorner" eType="#//baseTypes/Coordinate" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="lowerLeftCorner" eType="#//baseTypes/Coordinate" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="width" eType="#//baseTypes/unit/Distance" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="length" eType="#//baseTypes/unit/Distance" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="orientation" eType="#//baseTypes/unit/RelativeGeoDirection" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="offset" eType="#//baseTypes/unit/Distance" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="lineColor" eType="#//baseTypes/MSSColor" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="lineWidth" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="displayLabel" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="labelFontSize" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="labelColor" eType="#//baseTypes/MSSColor" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="labelFontStyle" eType="#//baseTypes/FontStyles" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="loadToPDS" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="modified" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="faorReference" eType="#//dm/DMReference" containment="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="VersioningInformation">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="releasedForUse" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="imported" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="origin" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="entryDateTime" lowerBound="1" eType="#//baseTypes/MSSDateTime" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="lastChangeUserId" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="lastChangeDateTime" lowerBound="1" eType="#//baseTypes/MSSDateTime" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="shortDescription" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="authorId" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="TargetWeatherData">
+			<eStructuralFeatures xsi:type="ecore:EReference" name="dValue" eType="#//baseTypes/Unit" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="pressureAltitude" eType="#//baseTypes/Unit" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="WeatherData">
+			<eStructuralFeatures xsi:type="ecore:EReference" name="airPressureQNH" lowerBound="1" eType="#//baseTypes/unit/Pressure" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="temperature" lowerBound="1" eType="#//baseTypes/unit/Temperature" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="windSpeed" lowerBound="1" eType="#//baseTypes/unit/Speed" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="windDirection" lowerBound="1" eType="#//baseTypes/unit/RelativeGeoDirection" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="inputState" lowerBound="1" eType="#//baseTypes/WeatherInputStates" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EDataType" name="ClassificationPrintPosition" instanceClassName="com.airbus.ds.mss.core.mp.baseTypes.api.enums.ClassificationPrintPosition" />
+		<eClassifiers xsi:type="ecore:EDataType" name="CoordinateSystems" instanceClassName="com.airbus.ds.mss.core.mp.baseTypes.api.enums.CoordinateSystems" />
+		<eClassifiers xsi:type="ecore:EDataType" name="CoordinateFormats" instanceClassName="com.airbus.ds.mss.core.mp.baseTypes.api.enums.CoordinateFormats" />
+		<eClassifiers xsi:type="ecore:EDataType" name="LocalTime" instanceClassName="java.time.LocalTime" />
+		<eClassifiers xsi:type="ecore:EDataType" name="LocalDate" instanceClassName="java.time.LocalDate" />
+		<eClassifiers xsi:type="ecore:EDataType" name="LocalDateTime" instanceClassName="java.time.LocalDateTime" />
+		<eClassifiers xsi:type="ecore:EDataType" name="TurnDirections" instanceClassName="com.airbus.ds.mss.core.common.jpa.persistence.datamodel.acdata.enums.TurnDirections" />
+		<eClassifiers xsi:type="ecore:EDataType" name="PaperFormats" instanceClassName="com.airbus.ds.mss.core.mp.baseTypes.api.enums.PaperFormats" />
+		<eClassifiers xsi:type="ecore:EDataType" name="FontStyles" instanceClassName="com.airbus.ds.mss.core.mp.baseTypes.api.enums.FontStyles" />
+		<eClassifiers xsi:type="ecore:EDataType" name="MapScales" instanceClassName="com.airbus.ds.mss.core.mp.baseTypes.api.enums.MapScales" />
+		<eClassifiers xsi:type="ecore:EDataType" name="ProjectionTypes" instanceClassName="com.airbus.ds.mss.core.mp.baseTypes.api.enums.ProjectionTypes" />
+		<eClassifiers xsi:type="ecore:EDataType" name="Heading" instanceClassName="com.airbus.ds.mss.core.mp.baseTypes.api.enums.Heading" />
+		<eClassifiers xsi:type="ecore:EDataType" name="RoutePointFunctionalType" instanceClassName="com.airbus.ds.mss.core.common.jpa.persistence.datamodel.acdata.enums.RoutePointFunctionalType" />
+		<eClassifiers xsi:type="ecore:EDataType" name="DiversionFuelMethod" instanceClassName="com.airbus.ds.mss.core.common.jpa.persistence.datamodel.acdata.enums.DiversionFuelMethod" />
+		<eClassifiers xsi:type="ecore:EDataType" name="WeaponTypes" instanceClassName="com.airbus.ds.mss.core.mp.baseTypes.api.enums.attack.WeaponTypes" />
+		<eClassifiers xsi:type="ecore:EDataType" name="WeaponReleaseInterval" instanceClassName="com.airbus.ds.mss.core.mp.baseTypes.api.enums.attack.WeaponReleaseInterval" />
+		<eClassifiers xsi:type="ecore:EDataType" name="OperationType" instanceClassName="com.airbus.ds.mss.core.mp.baseTypes.api.enums.attack.OperationType" />
+		<eClassifiers xsi:type="ecore:EDataType" name="CalculationInfoLevel" instanceClassName="com.airbus.ds.mss.core.mp.baseTypes.api.enums.route.calculation.CalculationInfoLevel" />
+		<eClassifiers xsi:type="ecore:EDataType" name="WeatherInputStates" instanceClassName="com.airbus.ds.mss.core.mp.baseTypes.api.enums.WeatherInputStates" />
+		<eClassifiers xsi:type="ecore:EDataType" name="AcMdFileWeaponType" instanceClassName="com.airbus.ds.mss.core.mp.baseTypes.api.enums.attack.AcMdFileWeaponType" />
+		<eClassifiers xsi:type="ecore:EDataType" name="FillStipplePattern" instanceClassName="com.airbus.ds.mss.core.common.jpa.persistence.datacontrol.enums.FillStipplePattern" />
+		<eClassifiers xsi:type="ecore:EDataType" name="LineDashPattern" instanceClassName="com.airbus.ds.mss.core.common.jpa.persistence.datacontrol.enums.LineDashPattern" />
+		<eClassifiers xsi:type="ecore:EDataType" name="TextAlignment" instanceClassName="com.airbus.ds.mss.core.common.jpa.persistence.datacontrol.enums.TextAlignment" />
+		<eClassifiers xsi:type="ecore:EClass" name="CrdInfo">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="filename" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="routeId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="missionId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="graphicalDetails" eType="#//sortie/SortiePresentation" containment="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EDataType" name="VerticalReferenceSystems" instanceClassName="com.airbus.ds.mss.core.mp.baseTypes.api.enums.VerticalReferenceSystems" />
+		<eSubpackages name="unit" nsURI="http://com.airbus.ds.mss.core.mp.missiondata.2.0.0.6/BaseTypes/Unit" nsPrefix="com.airbus.ds.mss.core.mp.missiondata.unit">
+			<eClassifiers xsi:type="ecore:EDataType" name="DogHouseValues" instanceClassName="com.airbus.ds.mss.core.common.jpa.persistence.datamodel.missionplanningdefaults.enums.DogHouseValues" />
+			nsPrefix="com.airbus.ds.mss.core.mp.missiondata.unit">
+			<eClassifiers xsi:type="ecore:EClass" name="AircraftSpeed">
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//baseTypes/unit/AircraftSpeedUnits" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="Altitude">
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//baseTypes/unit/AltitudeUnits" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="ref" eType="#//baseTypes/unit/AltitudeLevels" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="verticalReferenceSystems" eType="#//baseTypes/VerticalReferenceSystems" defaultValueLiteral="EGM96" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="Angle">
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//baseTypes/unit/AngleUnits" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="Distance">
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//baseTypes/unit/DistanceUnits" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="Frequency">
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//baseTypes/unit/FrequencyUnits" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="Length">
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//baseTypes/unit/LengthUnits" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="Pressure">
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//baseTypes/unit/PressureUnits" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="RelativeGeoDirection" eSuperTypes="#//baseTypes/unit/Angle">
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="ref" eType="#//baseTypes/unit/GeoReferenceSystem" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="Speed">
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//baseTypes/unit/SpeedUnits" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="Temperature">
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//baseTypes/unit/TemperatureUnits" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="TimeInterval">
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//baseTypes/unit/TimeIntervalUnits" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="TurnType">
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//baseTypes/unit/TurnTypeUnits" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="Weight">
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//baseTypes/unit/WeightUnits" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="Energy">
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//baseTypes/unit/EnergyUnits" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EDataType" name="AircraftSpeedUnits" instanceClassName="com.airbus.ds.mss.core.mp.baseTypes.api.enums.units.AircraftSpeedUnits" />
+			<eClassifiers xsi:type="ecore:EDataType" name="AltitudeUnits" instanceClassName="com.airbus.ds.mss.core.mp.baseTypes.api.enums.units.AltitudeUnits" />
+			<eClassifiers xsi:type="ecore:EDataType" name="AltitudeLevels" instanceClassName="com.airbus.ds.mss.core.mp.baseTypes.api.enums.units.AltitudeLevels" />
+			<eClassifiers xsi:type="ecore:EDataType" name="AngleUnits" instanceClassName="com.airbus.ds.mss.core.mp.baseTypes.api.enums.units.AngleUnits" />
+			<eClassifiers xsi:type="ecore:EDataType" name="DistanceUnits" instanceClassName="com.airbus.ds.mss.core.mp.baseTypes.api.enums.units.DistanceUnits" />
+			<eClassifiers xsi:type="ecore:EDataType" name="FrequencyUnits" instanceClassName="com.airbus.ds.mss.core.mp.baseTypes.api.enums.units.FrequencyUnits" />
+			<eClassifiers xsi:type="ecore:EDataType" name="GeoReferenceSystem" instanceClassName="com.airbus.ds.mss.core.mp.baseTypes.api.enums.units.GeoReferenceSystem" />
+			<eClassifiers xsi:type="ecore:EDataType" name="LengthUnits" instanceClassName="com.airbus.ds.mss.core.mp.baseTypes.api.enums.units.LengthUnits" />
+			<eClassifiers xsi:type="ecore:EDataType" name="PressureUnits" instanceClassName="com.airbus.ds.mss.core.mp.baseTypes.api.enums.units.PressureUnits" />
+			<eClassifiers xsi:type="ecore:EDataType" name="SpeedUnits" instanceClassName="com.airbus.ds.mss.core.mp.baseTypes.api.enums.units.SpeedUnits" />
+			<eClassifiers xsi:type="ecore:EDataType" name="TemperatureUnits" instanceClassName="com.airbus.ds.mss.core.mp.baseTypes.api.enums.units.TemperatureUnits" />
+			<eClassifiers xsi:type="ecore:EDataType" name="TimeIntervalUnits" instanceClassName="com.airbus.ds.mss.core.mp.baseTypes.api.enums.units.TimeIntervalUnits" />
+			<eClassifiers xsi:type="ecore:EDataType" name="TimeZones" instanceClassName="com.airbus.ds.mss.core.mp.baseTypes.api.enums.units.TimeZones" />
+			<eClassifiers xsi:type="ecore:EDataType" name="TurnTypeUnits" instanceClassName="com.airbus.ds.mss.core.mp.baseTypes.api.enums.units.TurnTypeUnits" />
+			<eClassifiers xsi:type="ecore:EDataType" name="WeightUnits" instanceClassName="com.airbus.ds.mss.core.mp.baseTypes.api.enums.units.WeightUnits" />
+			<eClassifiers xsi:type="ecore:EDataType" name="EnergyUnits" instanceClassName="com.airbus.ds.mss.core.mp.baseTypes.api.enums.units.EnergyUnits" />
+		</eSubpackages>
+		<eSubpackages name="dafif" nsURI="http://com.airbus.ds.mss.core.mp.missiondata.2.0.0.6/BaseTypes/Dafif" nsPrefix="com.airbus.ds.mss.core.mp.missiondata.dafif">
+			<eClassifiers xsi:type="ecore:EClass" name="BasicAirfield">
+				<eStructuralFeatures xsi:type="ecore:EReference" name="dmRef" eType="#//dm/DMDafifReference" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="icao" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			</eClassifiers>
+		</eSubpackages>
+	</eSubpackages>
+	<eSubpackages name="msl" nsURI="http://com.airbus.ds.mss.core.mp.missiondata.2.0.0.6/Msl" nsPrefix="com.airbus.ds.mss.core.mp.missiondata">
+		<eClassifiers xsi:type="ecore:EClass" name="MissionSpecificLoad">
+			<eStructuralFeatures xsi:type="ecore:EReference" name="basicLoadReference" eType="#//dm/DMBasicLoadReference" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="tacticalSymbolContainer" eType="#//msl/TacticalSymbolContainer" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="TacticalSymbolContainer">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="remark" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="tacticalSymbols" upperBound="-1" eType="#//msl/TacticalSymbol" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="TacticalSymbol">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="tsilTypeId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+		</eClassifiers>
+	</eSubpackages>
+	<eSubpackages name="told" nsURI="http://com.airbus.ds.mss.core.mp.missiondata.2.0.0.6/Told" nsPrefix="com.airbus.ds.mss.core.mp.missiondata">
+		<eClassifiers xsi:type="ecore:EClass" name="ToldSortie">
+			<eStructuralFeatures xsi:type="ecore:EReference" name="takeoff" lowerBound="1" eType="#//told/ToldRunwayInfo" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="landing" lowerBound="1" eType="#//told/ToldRunwayInfo" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="alternate1" lowerBound="1" eType="#//told/ToldRunwayInfo" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="alternate2" lowerBound="1" eType="#//told/ToldRunwayInfo" containment="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="ToldRunwayInfo">
+			<eStructuralFeatures xsi:type="ecore:EReference" name="airfield" lowerBound="1" eType="#//told/ToldAirfield" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="runway" lowerBound="1" eType="#//told/ToldRunway" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="arrestingSystem" lowerBound="1" eType="#//told/ToldArrestingSystem" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="predefinedRoute" eType="#//dm/DMRouteReference" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="flightPlan" eType="#//dm/DMFligthPlanReference" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="weatherData" lowerBound="1" eType="#//baseTypes/WeatherData" containment="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="ToldAirfield" eSuperTypes="#//baseTypes/dafif/BasicAirfield">
+			<eStructuralFeatures xsi:type="ecore:EReference" name="aerodromeReferenceCoordinate" lowerBound="1" eType="#//baseTypes/Coordinate" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="aerodromeReferenceMagVar" lowerBound="1" eType="#//baseTypes/unit/Angle" containment="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="ToldRunway">
+			<eStructuralFeatures xsi:type="ecore:EReference" name="dmRef" lowerBound="1" eType="#//dm/DMDafifReference" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="heading" lowerBound="1" eType="#//baseTypes/unit/RelativeGeoDirection" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="tdze" lowerBound="1" eType="#//baseTypes/unit/Altitude" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="slope" lowerBound="1" eType="#//baseTypes/unit/Angle" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="takeOffDistanceAvailable" lowerBound="1" eType="#//baseTypes/unit/Distance" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="takeOffRunAvailable" lowerBound="1" eType="#//baseTypes/unit/Distance" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="overRun" lowerBound="1" eType="#//baseTypes/unit/Distance" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="runwayConstraint" eType="#//baseTypes/unit/Distance" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="landingDistanceAvailable" lowerBound="1" eType="#//baseTypes/unit/Distance" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="thresholdCoordinate" lowerBound="1" eType="#//baseTypes/Coordinate" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="thresholdMagVar" lowerBound="1" eType="#//baseTypes/unit/Angle" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="accelerateStopDistanceAvailable" lowerBound="1" eType="#//baseTypes/unit/Distance" containment="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="ToldArrestingSystem">
+			<eStructuralFeatures xsi:type="ecore:EReference" name="dmRef" lowerBound="1" eType="#//dm/DMDafifReference" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="location" lowerBound="1" eType="#//baseTypes/unit/Distance" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="arrestingGearSystem" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="energyAbsorptionSystem" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="cableNumber" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+		</eClassifiers>
+	</eSubpackages>
+	<eSubpackages name="route" nsURI="http://com.airbus.ds.mss.core.mp.missiondata.2.0.0.6/Route" nsPrefix="com.airbus.ds.mss.core.mp.missiondata">
+		<eClassifiers xsi:type="ecore:EClass" name="Route" abstract="true">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="piCaps" upperBound="-1" eType="#//route/PiCap" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="mppSpecificCmf" eType="#//cmf/MppSpecificCmf" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="calcRouteEventMarkers" upperBound="-1" eType="#//route/calculation/RouteEventMarker" transient="true" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="calcInfoMessages" upperBound="-1" eType="#//route/calculation/RouteCalculationInfo" transient="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="SegmentedRoute" eSuperTypes="#//route/Route">
+			<eStructuralFeatures xsi:type="ecore:EReference" name="defaultSegment" lowerBound="1" eType="#//route/RouteSegment" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="routeSegments" upperBound="-1" eType="#//route/RouteSegment" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="attackSegments" upperBound="-1" eType="#//route/AttackSegment" containment="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="SteeringRoute" eSuperTypes="#//route/SegmentedRoute">
+			<eStructuralFeatures xsi:type="ecore:EReference" name="takeOff" eType="#//route/PiCap" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="departure" lowerBound="1" eType="#//route/RouteSegment" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="arrival" lowerBound="1" eType="#//route/RouteSegment" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="landing" eType="#//route/PiCap" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="diversionAlt1" lowerBound="1" eType="#//route/RouteSegment" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="alternate1" eType="#//route/PiCap" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="diversionAlt2" lowerBound="1" eType="#//route/RouteSegment" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="alternate2" eType="#//route/PiCap" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="RouteSegment">
+			<eStructuralFeatures xsi:type="ecore:EReference" name="piCaps" upperBound="-1" eType="#//route/PiCap" eOpposite="#//route/PiCap/segment" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="AttackSegment" eSuperTypes="#//route/RouteSegment">
+			<eStructuralFeatures xsi:type="ecore:EReference" name="attack" eType="#//attack/Attack" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="targets" lowerBound="1" upperBound="4" eType="#//attack/TargetReference" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="subtargetPiCaps" upperBound="-1" eType="#//route/PiCap" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="grpPoint" eType="#//route/WPEntry" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="weaponMappings" upperBound="2" eType="#//sortie/WeaponMapping" eOpposite="#//sortie/WeaponMapping/linkedAttacks" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="minTof" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="PiCap" abstract="true">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="groupId" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="label" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" defaultValueLiteral="" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="mssPoint" lowerBound="1" eType="#//baseTypes/RoutePoint" eOpposite="#//baseTypes/RoutePoint/piCaps" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="wpEntry" eType="#//route/WPEntry" eOpposite="#//route/WPEntry/piCaps" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="segment" eType="#//route/RouteSegment" eOpposite="#//route/RouteSegment/piCaps" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="identParameter" lowerBound="1" eType="#//route/IdentParameter" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="intentList" lowerBound="1" eType="#//route/intent/IntentList" containment="true" eOpposite="#//route/intent/IntentList/piCap" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="typeParameterList" lowerBound="1" eType="#//route/typeParameter/TypeParameterList" containment="true" eOpposite="#//route/typeParameter/TypeParameterList/piCap" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="specialEventName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="functionInRoute" eType="#//baseTypes/RoutePointFunctionalType" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="calculatedData" eType="#//route/calculation/RouteCalculatedData" transient="true" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="additionalCalculatedPoints" upperBound="-1" eType="#//route/calculation/RouteAdditionalCalculatedPoint" transient="true" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="offRouteContainer" eType="#//route/WPEntry" eOpposite="#//route/WPEntry/offRoutePiCap" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="locked" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" defaultValueLiteral="false" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="calcRouteEventMarkersInLeg" upperBound="-1" eType="#//route/calculation/RouteEventMarker" transient="true" containment="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="WPList">
+			<eStructuralFeatures xsi:type="ecore:EReference" name="parent" lowerBound="1" eType="#//sortie/Sortie" eOpposite="#//sortie/Sortie/wpList" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="dmReference" eType="#//dm/DMWaypointListReference" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="entries" upperBound="-1" eType="#//route/WPEntry" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="mppSpecificCmf" eType="#//cmf/MppSpecificCmf" containment="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="WPEntry">
+			<eStructuralFeatures xsi:type="ecore:EReference" name="dmReference" eType="#//dm/DMWaypointReference" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="index" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" defaultValueLiteral="-1" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="piCaps" lowerBound="1" upperBound="-1" eType="#//route/PiCap" eOpposite="#//route/PiCap/wpEntry" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="offRoutePiCap" eType="#//route/PiCap" containment="true" eOpposite="#//route/PiCap/offRouteContainer" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="IdentParameter">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="ident" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="remark" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="creationInfo" lowerBound="1" eType="#//baseTypes/CreationInfo" containment="true" />
+		</eClassifiers>
+		<eSubpackages name="intent" nsURI="http://com.airbus.ds.mss.core.mp.missiondata.2.0.0.6/Route/Intent" nsPrefix="com.airbus.ds.mss.core.mp.missiondata.route">
+			<eClassifiers xsi:type="ecore:EClass" name="IntentList">
+				<eStructuralFeatures xsi:type="ecore:EReference" name="intents" upperBound="-1" eType="#//route/intent/Intent" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="piCap" lowerBound="1" eType="#//route/PiCap" eOpposite="#//route/PiCap/intentList" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="Intent" abstract="true" />
+			<eClassifiers xsi:type="ecore:EClass" name="AltitudeIntent" eSuperTypes="#//route/intent/Intent">
+				<eStructuralFeatures xsi:type="ecore:EReference" name="plannedAltitude" eType="#//baseTypes/unit/Altitude" containment="true" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="SpeedIntent" eSuperTypes="#//route/intent/Intent">
+				<eStructuralFeatures xsi:type="ecore:EReference" name="plannedSpeed" eType="#//baseTypes/unit/AircraftSpeed" containment="true" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="WeatherIntent" eSuperTypes="#//route/intent/Intent">
+				<eStructuralFeatures xsi:type="ecore:EReference" name="weatherData" eType="#//baseTypes/WeatherData" containment="true" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="HardTimeIntent" eSuperTypes="#//route/intent/Intent">
+				<eStructuralFeatures xsi:type="ecore:EReference" name="time" eType="#//baseTypes/MSSDateTime" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="transferToPds" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" defaultValueLiteral="false" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="HoldingIntent" eSuperTypes="#//route/intent/Intent">
+				<eStructuralFeatures xsi:type="ecore:EReference" name="holdTime" eType="#//baseTypes/unit/TimeInterval" containment="true" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="TurnIntent" eSuperTypes="#//route/intent/Intent">
+				<eStructuralFeatures xsi:type="ecore:EReference" name="turn" eType="#//baseTypes/unit/TurnType" containment="true" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="FuelIntent" eSuperTypes="#//route/intent/Intent">
+				<eStructuralFeatures xsi:type="ecore:EReference" name="additionalFuelMass" eType="#//baseTypes/unit/Weight" containment="true" />
+			</eClassifiers>
+		</eSubpackages>
+		<eSubpackages name="calculation" nsURI="http://com.airbus.ds.mss.core.mp.missiondata.2.0.0.6/Route/Calculation" nsPrefix="com.airbus.ds.mss.core.mp.missiondata.route">
+			<eClassifiers xsi:type="ecore:EClass" name="RouteCalculatedData" abstract="true">
+				<eStructuralFeatures xsi:type="ecore:EReference" name="fuelValuesAtPoint" eType="#//route/calculation/RouteCalculatedFuelData" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="altitudeAtPoint" eType="#//route/calculation/RouteCalculatedAltitudeData" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="speedValuesAtPoint" eType="#//route/calculation/RouteCalculatedSpeedData" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="runningValuesAtPoint" eType="#//route/calculation/RouteCalculatedRunningData" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="legValuesToNextPlanned" eType="#//route/calculation/RouteCalculatedLegData" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="legValuesToNextCalculated" eType="#//route/calculation/RouteCalculatedLegData" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="geometryToNextCalculated" eType="#//route/calculation/RouteGeometry" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="actualTimeAtPoint" eType="#//baseTypes/MSSDateTime" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="timeEarlyLateSecAtPoint" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="avgSpeedToNextHardTime" eType="#//baseTypes/unit/AircraftSpeed" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="calcInfoMessages" upperBound="-1" eType="#//route/calculation/RouteCalculationInfo" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="warningMessages" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="errorMessages" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="RouteCalculatedFuelData">
+				<eStructuralFeatures xsi:type="ecore:EReference" name="continuationFuel" eType="#//baseTypes/unit/Weight" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="missingFuel" eType="#//baseTypes/unit/Weight" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="remainingFuel" eType="#//baseTypes/unit/Weight" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="jokerFuel" eType="#//baseTypes/unit/Weight" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="tigerFuel" eType="#//baseTypes/unit/Weight" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="chickenFuel" eType="#//baseTypes/unit/Weight" containment="true" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="RouteCalculatedRunningData">
+				<eStructuralFeatures xsi:type="ecore:EReference" name="runningDistance" eType="#//baseTypes/unit/Distance" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="runningFuel" eType="#//baseTypes/unit/Weight" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="runningTimeSeconds" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="RouteCalculatedSpeedData">
+				<eStructuralFeatures xsi:type="ecore:EReference" name="speed" eType="#//baseTypes/unit/AircraftSpeed" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="trueHeading" eType="#//baseTypes/unit/RelativeGeoDirection" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="trueTrack" eType="#//baseTypes/unit/RelativeGeoDirection" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="magHeading" eType="#//baseTypes/unit/RelativeGeoDirection" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="magTrack" eType="#//baseTypes/unit/RelativeGeoDirection" containment="true" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="RouteCalculatedLegData">
+				<eStructuralFeatures xsi:type="ecore:EReference" name="legFuel" eType="#//baseTypes/unit/Weight" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="legDistance" eType="#//baseTypes/unit/Distance" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="legFuelFlow" eType="#//baseTypes/unit/Weight" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="legTimeSeconds" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="RouteGeometry">
+				<eStructuralFeatures xsi:type="ecore:EReference" name="startCoordinate" eType="#//baseTypes/Coordinate" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="endCoordinate" eType="#//baseTypes/Coordinate" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="length" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="track" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="RouteArcGeometry" eSuperTypes="#//route/calculation/RouteGeometry">
+				<eStructuralFeatures xsi:type="ecore:EReference" name="turnCenter" eType="#//baseTypes/Coordinate" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="turnRadius" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="turnDirection" eType="#//baseTypes/TurnDirections" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="RouteSegmentGeometry" eSuperTypes="#//route/calculation/RouteGeometry" />
+			<eClassifiers xsi:type="ecore:EClass" name="RouteAdditionalCalculatedPoint">
+				<eStructuralFeatures xsi:type="ecore:EReference" name="calculatedData" eType="#//route/calculation/RouteCalculatedData" containment="true" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="RouteCalculatedAltitudeData">
+				<eStructuralFeatures xsi:type="ecore:EReference" name="altitude" eType="#//baseTypes/unit/Altitude" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="beginOrEndOfAltitudeChange" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="RouteEventMarker">
+				<eStructuralFeatures xsi:type="ecore:EReference" name="coordinate" eType="#//baseTypes/Coordinate" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="speed" eType="#//baseTypes/unit/AircraftSpeed" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="altitude" eType="#//baseTypes/unit/Altitude" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="beginClimb" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="endClimb" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="beginDescent" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="endDescent" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="beginAcceleration" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="endAcceleration" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="beginDeceleration" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="endDeceleration" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="RouteCalculationInfo">
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="infoLevel" eType="#//baseTypes/CalculationInfoLevel" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="infoMessage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			</eClassifiers>
+		</eSubpackages>
+		<eSubpackages name="typeParameter" nsURI="http://com.airbus.ds.mss.core.mp.missiondata.2.0.0.6/Route/TypeParameter" nsPrefix="com.airbus.ds.mss.core.mp.missiondata.route">
+			<eClassifiers xsi:type="ecore:EClass" name="TypeParameter" abstract="true" />
+			<eClassifiers xsi:type="ecore:EClass" name="TypeParameterList">
+				<eStructuralFeatures xsi:type="ecore:EReference" name="typeParameters" upperBound="-1" eType="#//route/typeParameter/TypeParameter" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="piCap" lowerBound="1" eType="#//route/PiCap" eOpposite="#//route/PiCap/typeParameterList" />
+			</eClassifiers>
+		</eSubpackages>
+	</eSubpackages>
+	<eSubpackages name="cmf" nsURI="http://com.airbus.ds.mss.core.mp.missiondata.2.0.0.6/Cmf" nsPrefix="com.airbus.ds.mss.core.mp.missiondata">
+		<eClassifiers xsi:type="ecore:EClass" name="MissionSpecificCmf">
+			<eStructuralFeatures xsi:type="ecore:EReference" name="areaChartsSettings" eType="#//charts/settings/AreaChartsSettings" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="stripChartsSettings" eType="#//charts/settings/StripChartsSettings" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="tickMarkSettings" eType="#//charts/settings/TickMarkSettings" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="areaOfInterest" eType="#//charts/symbols/AreaOfInterest" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="textBoxes" upperBound="-1" eType="#//charts/symbols/TextBoxSymbolInfo" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="EditingTextBox" eType="#//charts/symbols/TextBoxSymbolInfo" containment="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="SortieSpecificCmf">
+			<eStructuralFeatures xsi:type="ecore:EReference" name="stripChartsPageInfos" upperBound="-1" eType="#//charts/symbols/PageInfo" transient="true" containment="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="MppSpecificCmf">
+			<eStructuralFeatures xsi:type="ecore:EReference" name="mppLabelSymbolInfos" upperBound="-1" eType="#//charts/symbols/MppLabelSymbolInfo" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="DogHouseSymbolInfos" upperBound="-1" eType="#//charts/symbols/DogHouseSymbolInfo" containment="true" />
+		</eClassifiers>
+	</eSubpackages>
+	<eSubpackages name="charts" nsURI="http://com.airbus.ds.mss.core.mp.missiondata.2.0.0.6/Charts" nsPrefix="com.airbus.ds.mss.core.mp.missiondata">
+		<eSubpackages name="settings" nsURI="http://com.airbus.ds.mss.core.mp.missiondata.2.0.0.6/Charts/Settings" nsPrefix="com.airbus.ds.mss.core.mp.missiondata.charts">
+			<eClassifiers xsi:type="ecore:EClass" name="FlightChartsSettings" abstract="true" interface="true">
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="displayZoom" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="isPortraitMode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="paperBorderWidth" eType="#//baseTypes/unit/Length" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="doghousesVisible" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="tickMarksVisible" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="mppLabelsVisible" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="DogHouseSide" eType="#//baseTypes/DogHouseSide" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="DogHouseAttributeField1" eType="#//baseTypes/DogHouseValues" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="DogHouseAttributeField2" eType="#//baseTypes/DogHouseValues" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="DogHouseAttributeField3" eType="#//baseTypes/DogHouseValues" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="DogHouseAttributeField4" eType="#//baseTypes/DogHouseValues" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="DogHouseAttributeField5" eType="#//baseTypes/DogHouseValues" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="dogHouseBackgroundColor" lowerBound="1" eType="#//baseTypes/MSSColor" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="dogHouseBorderColor" lowerBound="1" eType="#//baseTypes/MSSColor" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="dogHouseTextColor" lowerBound="1" eType="#//baseTypes/MSSColor" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="dogHouseTransparency" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="dogHouseBorderWidth" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="dogHouseFont" eType="#//baseTypes/MSSFont" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="PaperFormat" eType="#//baseTypes/PaperFormats" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="DogHouseDistance" eType="#//baseTypes/unit/Distance" containment="true" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="AreaChartsSettings" abstract="true" interface="true" eSuperTypes="#//charts/settings/FlightChartsSettings">
+				<eStructuralFeatures xsi:type="ecore:EReference" name="mapOverlap" eType="#//baseTypes/unit/Length" containment="true" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="StripChartsSettings" abstract="true" interface="true" eSuperTypes="#//charts/settings/FlightChartsSettings">
+				<eStructuralFeatures xsi:type="ecore:EReference" name="minBorderDistance" eType="#//baseTypes/unit/Distance" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="routeOverlap" eType="#//baseTypes/unit/Length" containment="true" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="TickMarkSettings">
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="timeTickMarksVisible" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="distanceTickMarksVisible" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="timeTickMarksAreOnLeftSideOfRoute" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="distanceTickMarksAreOnLeftSideOfRoute" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="majorTimeStepSize" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="minorTimeStepSize" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="majorDistanceStepSize" eType="#//baseTypes/Unit" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="minorDistanceStepSize" eType="#//baseTypes/Unit" containment="true" />
+			</eClassifiers>
+		</eSubpackages>
+		<eSubpackages name="symbols" nsURI="http://com.airbus.ds.mss.core.mp.missiondata.2.0.0.6/Charts/Symbols" nsPrefix="com.airbus.ds.mss.core.mp.missiondata.charts">
+			<eClassifiers xsi:type="ecore:EClass" name="PointBasedSymbolInfo" abstract="true">
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="xOffsetMeters" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="yOffsetMeters" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="rotationRad" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="moved" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="rotated" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="coordinate" eType="#//baseTypes/Coordinate" containment="true" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="RectangularAreaSymbolInfo" abstract="true" eSuperTypes="#//charts/symbols/PointBasedSymbolInfo">
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="widthMeters" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="heightMeters" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="printingEnabled" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="BoxSymbolInfo" abstract="true" eSuperTypes="#//charts/symbols/RectangularAreaSymbolInfo">
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="borderWidth" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="borderColor" eType="#//baseTypes/MSSColor" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="borderOpacity" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="backgroundColor" eType="#//baseTypes/MSSColor" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="backgroundOpacity" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="hBoxAlignment" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="vBoxAlignment" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="hGapMilliMeters" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="vGapMilliMeters" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="selected" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="borderPattern" eType="#//baseTypes/LineDashPattern" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="borderPatternScale" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="fillPattern" eType="#//baseTypes/FillStipplePattern" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="AreaOfInterest" eSuperTypes="#//charts/symbols/RectangularAreaSymbolInfo">
+				<eStructuralFeatures xsi:type="ecore:EReference" name="areaChartsPageInfos" upperBound="-1" eType="#//charts/symbols/PageInfo" transient="true" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="pagesEnabled" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" transient="true" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="ProjectionType" eType="#//baseTypes/ProjectionTypes" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="TextBoxSymbolInfo" eSuperTypes="#//charts/symbols/BoxSymbolInfo">
+				<eStructuralFeatures xsi:type="ecore:EReference" name="textFont" eType="#//baseTypes/MSSFont" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="textColor" eType="#//baseTypes/MSSColor" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="textOpacity" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="textAlignment" eType="#//baseTypes/TextAlignment" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="content" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="rotateHandlePosition" eType="#//baseTypes/Coordinate" containment="true" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="PageInfo" eSuperTypes="#//charts/symbols/RectangularAreaSymbolInfo">
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="pageNumber" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="tiles" upperBound="-1" eType="#//charts/symbols/TileSymbolInfo" transient="true" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="tileRowCount" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="tileColumnCount" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="TileSymbolInfo" eSuperTypes="#//charts/symbols/RectangularAreaSymbolInfo">
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="row" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="column" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="MppLabelSymbolInfo">
+				<eStructuralFeatures xsi:type="ecore:EReference" name="piCap" eType="#//route/PiCap" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="textFont" eType="#//baseTypes/MSSFont" containment="true" />
+			</eClassifiers>
+			<eClassifiers xsi:type="ecore:EClass" name="DogHouseSymbolInfo">
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="DogHouseSide" eType="#//baseTypes/DogHouseSide" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="dogHouseBackgroundColor" lowerBound="1" eType="#//baseTypes/MSSColor" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="dogHouseBorderColor" lowerBound="1" eType="#//baseTypes/MSSColor" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="dogHouseTextColor" lowerBound="1" eType="#//baseTypes/MSSColor" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="dogHouseTransparency" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="dogHouseBorderWidth" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="dogHouseFont" eType="#//baseTypes/MSSFont" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="DogHouseDistance" eType="#//baseTypes/unit/Distance" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="dogHousePosition" eType="#//baseTypes/Coordinate" containment="true" />
+				<eStructuralFeatures xsi:type="ecore:EReference" name="piCap" eType="#//route/PiCap" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="DogHouseAttributeField1" eType="#//baseTypes/DogHouseValues" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="DogHouseAttributeField2" eType="#//baseTypes/DogHouseValues" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="DogHouseAttributeField3" eType="#//baseTypes/DogHouseValues" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="DogHouseAttributeField4" eType="#//baseTypes/DogHouseValues" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="DogHouseAttributeField5" eType="#//baseTypes/DogHouseValues" />
+				<eStructuralFeatures xsi:type="ecore:EAttribute" name="dogHouseManualPos" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" defaultValueLiteral="false" />
+			</eClassifiers>
+		</eSubpackages>
+	</eSubpackages>
+	<eSubpackages name="sortie" nsURI="http://com.airbus.ds.mss.core.mp.missiondata.2.0.0.6/Sortie" nsPrefix="com.airbus.ds.mss.core.mp.missiondata">
+		<eClassifiers xsi:type="ecore:EClass" name="Sortie" abstract="true">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" iD="true" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="tacticalCallsign" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="sortieSpecificCmf" eType="#//cmf/SortieSpecificCmf" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="bogusWeaponPackages" upperBound="-1" eType="#//sortie/WeaponPackage" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="hotWeaponPackages" upperBound="-1" eType="#//sortie/WeaponPackage" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="awxPreset" eType="#//sortie/AwxPreset" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="guidedAttackLaserCodes" upperBound="-1" eType="#//sortie/GuidedAttackLaserCode" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="told" lowerBound="1" eType="#//told/ToldSortie" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="wpList" lowerBound="1" eType="#//route/WPList" containment="true" eOpposite="#//route/WPList/parent" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="timeSettings" eType="#//sortie/SortieTimeSettings" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="fuelSettings" eType="#//sortie/SortieFuelSettings" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="presentation" lowerBound="1" eType="#//sortie/SortiePresentation" containment="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="SortieTimeSettings" abstract="true" />
+		<eClassifiers xsi:type="ecore:EClass" name="SortieFuelSettings">
+			<eStructuralFeatures xsi:type="ecore:EReference" name="startupFuel" lowerBound="1" eType="#//baseTypes/unit/Weight" containment="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="TakeOffData">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="engineThrustRating" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="diversionFuelAlt1" eType="#//baseTypes/Unit" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="diversionFuelAlt2" eType="#//baseTypes/Unit" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="diversionFuelMethodAlt1Id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="diversionFuelMethodAlt2Id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="performance" eType="#//sortie/PerformanceType" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="PerformanceType">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="performance" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="forSegmentId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="WeaponPackage">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="dCode" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="wpnMappings" lowerBound="4" upperBound="4" eType="#//sortie/WeaponMapping" containment="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="WeaponMapping">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="wpCnt" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="linkedAttacks" upperBound="-1" eType="#//route/AttackSegment" eOpposite="#//route/AttackSegment/weaponMappings" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="AwxPreset">
+			<eStructuralFeatures xsi:type="ecore:EReference" name="awxLaserSettings" eType="#//sortie/AwxLaserSettings" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="missionPreset1" eType="#//sortie/AwxMissionPreset" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="missionPreset2" eType="#//sortie/AwxMissionPreset" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="missionPreset3" eType="#//sortie/AwxMissionPreset" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="defaultPreset" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="awxFuseType" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="AwxLaserSettings">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="laserCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="laserCodeControlMode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="AwxMissionPreset">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="presetName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="presetDescription" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="typeOfGuidance" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="impactAngle" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="timeFromImpact" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="armTime" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELong" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="defined" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="GuidedAttackLaserCode">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="laserCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="laserFiring" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="laserSpotDetector" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="DiversionFuelSettings">
+			<eStructuralFeatures xsi:type="ecore:EReference" name="diversionFuel" lowerBound="1" eType="#//baseTypes/unit/Weight" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="diversionFuelMethod" eType="#//baseTypes/DiversionFuelMethod" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="SortiePresentation">
+			<eStructuralFeatures xsi:type="ecore:EReference" name="color" lowerBound="1" eType="#//baseTypes/MSSColor" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="lineWidth" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="fontSize" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="fontStyle" lowerBound="1" eType="#//baseTypes/FontStyles" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="labelBackgroundColor" lowerBound="1" eType="#//baseTypes/MSSColor" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="labelBackgroundTransparency" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" />
+		</eClassifiers>
+	</eSubpackages>
+	<eSubpackages name="mission" nsURI="http://com.airbus.ds.mss.core.mp.missiondata.2.0.0.6/Mission" nsPrefix="com.airbus.ds.mss.core.mp.missiondata">
+		<eClassifiers xsi:type="ecore:EClass" name="Mission" abstract="true">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="uniqueMissionId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" iD="true" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="atcCallsign" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="missionDate" lowerBound="1" eType="#//baseTypes/MSSDateTime" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="missionTimeZone" eType="#//baseTypes/unit/TimeZones" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="missionRemarks" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="sorties" upperBound="8" eType="#//sortie/Sortie" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="measuringTapeSymbolnfos" upperBound="-1" eType="#//mission/MeasuringTapeSymbolInfo" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="missionSpecificLoad" eType="#//msl/MissionSpecificLoad" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="vsClassification" eType="#//baseTypes/ClassificationLevel" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="points" upperBound="-1" eType="#//baseTypes/RoutePoint" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="versioningInformation" eType="#//baseTypes/VersioningInformation" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="bullseyes" upperBound="3" eType="#//baseTypes/Bullseye" containment="true" eOpposite="#//baseTypes/Bullseye/parent" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="faor" eType="#//baseTypes/Faor" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="combatMissionFolder" eType="#//cmf/MissionSpecificCmf" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="tasking" eType="#//mission/Tasking" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="crds" upperBound="-1" eType="#//baseTypes/CrdInfo" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="missionAuthenticationCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="Tasking">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="missionNumber" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="callsign" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" defaultValueLiteral="" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="acoReference1" eType="#//dm/DMAcoReference" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="acoReference2" eType="#//dm/DMAcoReference" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="optaskLinkReference" eType="#//dm/DMOptaskLinkReference" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="atoReference" eType="#//dm/DMATOReference" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="atoMissionNumber" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="MeasuringTapeSymbolInfo">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="textFont" eType="#//baseTypes/MSSFont" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="textColor" eType="#//baseTypes/MSSColor" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="backgroundColor" eType="#//baseTypes/MSSColor" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="borderColor" eType="#//baseTypes/MSSColor" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="lineColor" eType="#//baseTypes/MSSColor" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="lineWidth" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="measurementHeading" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="measurementUnit" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="measurementCourse" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="measurementPoints" upperBound="-1" eType="#//baseTypes/Coordinate" containment="true" />
+		</eClassifiers>
+	</eSubpackages>
+	<eSubpackages name="attack" nsURI="http://com.airbus.ds.mss.core.mp.missiondata.2.0.0.6/Attack" nsPrefix="com.airbus.ds.mss.core.mp.missiondata">
+		<eClassifiers xsi:type="ecore:EClass" name="AttackDataContainer">
+			<eStructuralFeatures xsi:type="ecore:EReference" name="plannedAttacks" upperBound="-1" eType="#//attack/AttackTemplate" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="usedTargets" upperBound="-1" eType="#//attack/TargetReference" containment="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="Target" eSuperTypes="#//attack/Entity">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="natoTrackRefNumber" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="jtl" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="pcf" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="ptl" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="attackSector1" eType="#//attack/AttackSector" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="attackSector2" eType="#//attack/AttackSector" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="rap" eType="#//attack/RAP" containment="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="Weapon" abstract="true" interface="true">
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1" eType="#//attack/TargetReference" eOpposite="#//attack/TargetReference/assigenedWeapons" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="Attack">
+			<eOperations name="getWeaponCount" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="parent" eType="#//attack/AttackTemplate" eOpposite="#//attack/AttackTemplate/segments" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="attackRouteContainer" eType="#//attack/AttackRouteContainer" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="linkedSortie" upperBound="8" eType="#//sortie/Sortie" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="TargetReference">
+			<eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1" eType="#//attack/Target" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="assigenedWeapons" lowerBound="1" upperBound="6" eType="#//attack/Weapon" containment="true" eOpposite="#//attack/Weapon/target" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="wpnReleaseInterval" eType="#//baseTypes/WeaponReleaseInterval" defaultValueLiteral="NONE" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="wpnType" eType="#//baseTypes/WeaponTypes" defaultValueLiteral="GBU48" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EEnum" name="ATTACK_PACKAGE_TYPE">
+			<eLiterals name="SINGLE" />
+			<eLiterals name="SIM" value="1" />
+			<eLiterals name="CON" value="2" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="Entity">
+			<eStructuralFeatures xsi:type="ecore:EReference" name="position" lowerBound="1" eType="#//baseTypes/GeoPoint" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="dmTarget" eType="#//dm/DMTarget" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="countryCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="dmpi" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="AttackSector">
+			<eStructuralFeatures xsi:type="ecore:EReference" name="from" eType="#//baseTypes/unit/RelativeGeoDirection" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="to" eType="#//baseTypes/unit/RelativeGeoDirection" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="radius" eType="#//baseTypes/unit/Distance" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="inUse" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" defaultValueLiteral="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="RAP">
+			<eStructuralFeatures xsi:type="ecore:EReference" name="bearing" eType="#//baseTypes/unit/RelativeGeoDirection" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="radius" eType="#//baseTypes/unit/Distance" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="elevation" eType="#//baseTypes/unit/Altitude" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="inUse" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="AttackTemplate">
+			<eStructuralFeatures xsi:type="ecore:EReference" name="segments" upperBound="8" eType="#//attack/Attack" containment="true" eOpposite="#//attack/Attack/parent" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="targets" lowerBound="1" upperBound="4" eType="#//attack/TargetReference" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="focusPoint" lowerBound="1" eType="#//baseTypes/GeoPoint" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="objective" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="reqTimeOfImpact" eType="#//baseTypes/MSSDateTime" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="altTimeOfImpact" eType="#//baseTypes/MSSDateTime" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="hasTimeOfImpact" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="creationDate" eType="#//baseTypes/MSSDateTime" containment="true" />
+		</eClassifiers>
+		<eClassifiers xsi:type="ecore:EClass" name="AttackRouteContainer">
+			<eStructuralFeatures xsi:type="ecore:EReference" name="targetReferences" lowerBound="1" upperBound="-1" eType="#//attack/TargetReference" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="piCaps" upperBound="-1" eType="#//route/PiCap" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="wpEntries" upperBound="-1" eType="#//route/WPEntry" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="routePoints" upperBound="-1" eType="#//baseTypes/MssPoint" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="subtargetPiCaps" upperBound="-1" eType="#//route/PiCap" containment="true" />
+			<eStructuralFeatures xsi:type="ecore:EReference" name="grpPoint" eType="#//route/PiCap" />
+			<eStructuralFeatures xsi:type="ecore:EAttribute" name="minTof" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" />
+		</eClassifiers>
+	</eSubpackages>
+	<eSubpackages name="ewdata" nsURI="http://com.airbus.ds.mss.core.mp.missiondata.2.0.0.6/EwData" nsPrefix="com.airbus.ds.mss.core.mp.missiondata">
+		<eClassifiers xsi:type="ecore:EClass" name="AbstractEWCoreLibrary" abstract="true">
+			<eStructuralFeatures xsi:type="ecore:EReference" name="dmRef" eType="#//dm/DMEwLibraryReference" containment="true" />
+		</eClassifiers>
+	</eSubpackages>
+</EPackage>

@@ -22,4 +22,3 @@ def printData(outputData):
         print(Colors.GREEN + "Die Daten werden geschrieben" + Colors.RESET)
         csv_writer = csv.writer(file)
         csv_writer.writerows(outputData)
-

@@ -18,3 +18,6 @@ class Colors:
 
     RESET = '\033[0m' # called to return to standard terminal text color
 
+
+com.airbus.ds.mss.core.common.jpa.src.com.airbus.ds.mss.core.common.jpa.persistence.datamodel.missionplanningdefaults.enums.DogHouseValues.java
+com.airbus.ds.mss.core.common.jpa/src/com/airbus/ds/mss/core/common/jpa/persistence/datamodel/missionplanningdefaults/enums/DogHouseValues.java
