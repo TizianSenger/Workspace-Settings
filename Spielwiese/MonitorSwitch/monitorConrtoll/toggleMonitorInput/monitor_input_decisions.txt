@@ -1,0 +1,3 @@
+\\.\DISPLAY1,DisplayPort
+\\.\DISPLAY2,DisplayPort
+\\.\DISPLAY3,HDMI

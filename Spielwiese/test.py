@@ -15,8 +15,8 @@ master = Tk()
 canvas_width = 1000
 canvas_height = 700
 w = Canvas(master, 
-           width=canvas_width,
-           height=canvas_height)
+width=canvas_width,
+height=canvas_height)
 w.pack()
 
 y = int(canvas_height / 2)
