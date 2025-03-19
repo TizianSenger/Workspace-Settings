@@ -33,14 +33,8 @@ def on_press(key):
     try:
         if key not in pressed_keys:
             pressed_keys.add(key)
-            if key == keyboard.Key.space:
-                play_sound(space_sound)
-            elif key == keyboard.Key.enter:
-                play_sound(enter_sound)
-            elif key == keyboard.Key.backspace:
-                play_sound(delete_sound)
-            else:
-                play_sound(default_sound)
+            if key == keyboard.Key.f11:
+                play_sound(monkey_sound)
     except Exception as e:
         print(f"Error: {e}")
 
@@ -48,15 +42,7 @@ def on_release(key):
     if key in pressed_keys:
         pressed_keys.remove(key)
 
-def on_click(x, y, button, pressed):
-    if pressed:
-        if button == mouse.Button.left:
-            play_sound(lclick_sound)
-        else:
-            play_sound(rclick_sound)
 
 # Collect events until released
-with keyboard.Listener(on_press=on_press, on_release=on_release) as keyboard_listener, \
-     mouse.Listener(on_click=on_click) as mouse_listener:
+with keyboard.Listener(on_press=on_press, on_release=on_release) as keyboard_listener:
     keyboard_listener.join()
-    mouse_listener.join()

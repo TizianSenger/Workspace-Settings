@@ -1,0 +1,4 @@
+git reb = git rebase, zählt alle commits seit der erstellung des branches um dann zu squashen
+git ss = git stash
+git ssd = git stash drop
+git st = git status 

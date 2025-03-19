@@ -1,0 +1,40 @@
+Y:\_Datentransfer\Bernt\Operational Datastore\01-Aeronautical\HIRTAs
+
+
+
+Y:\NatMSS\01_Testdata\NatMSS_Abnahme\AirbusMSS\01_DataManagement\01_Aeronautical\10_HIRTA\HIRTA_GAF
+die 2017 daten gehen die 2024 funktionieren nicht
+
+
+
+HirtaFile line 218             this.creationDate = MSSDate.createMSSDate(2000, 1, 1);
+HirtaImporter Line 274                          hirtaFile.getCreationDate().setYear(Integer.parseInt(splitDate[2]));
+                            hirtaFile.getCreationDate().setMonth(Integer.parseInt(splitDate[1]));
+                            hirtaFile.getCreationDate().setDay(Integer.parseInt(splitDate[0]));
+
+
+
+
+Das hiwer bei einem print mal schauen wie das aussiehtwenn es funktionuiert
+
+
+com.airbus.ds.mss.core.mp.missiondata.attack.impl.AttackTemplateImpl@1f25d574 (eProxyURI: file://C:\dev\eclipse-workspace\mss\german\runtime\MSS_Data\MissionStore\MissionRoot\Crew Specific\seti157\sdfg.mission\missiondata.xml#//@scenario/@plannedAttacks.0)
+
+com.airbus.ds.mss.core.mp.missiondata.attack.impl.AttackTemplateImpl@498c734b (name: New Attack Template GT0001, description: null, objective: null, hasTimeOfImpact: false)
+
+
+
+10:20:50.963 [JavaFX Application Thread] DEBUG com.airbus.ds.mss.core.common.gisluciad.mapview.MapPane - handleControllerChanges
+10:20:50.964 [AWT-EventQueue-0] DEBUG com.airbus.ds.mss.core.common.gisluciad.mapview.MapPane - Set controller
+10:21:06.817 [JavaFX Application Thread] DEBUG com.airbus.ds.mss.core.common.gisluciad.mapview.MapPane - handleControllerChanges
+10:21:06.818 [AWT-EventQueue-0] DEBUG com.airbus.ds.mss.core.common.gisluciad.mapview.MapPane - Set controller
+10:21:09.939 [JavaFX Application Thread] DEBUG com.airbus.ds.mss.core.common.gisluciad.mapview.MapPane - handleControllerChanges
+10:21:09.939 [AWT-EventQueue-0] DEBUG com.airbus.ds.mss.core.common.gisluciad.mapview.MapPane - Set controller
+10:21:13.869 [JavaFX Application Thread] DEBUG com.airbus.ds.mss.core.common.gisluciad.mapview.MapPane - handleControllerChanges
+10:21:13.869 [AWT-EventQueue-0] DEBUG com.airbus.ds.mss.core.common.gisluciad.mapview.MapPane - Set controller
+10:21:15.051 [JavaFX Application Thread] DEBUG com.airbus.ds.mss.core.common.gisluciad.mapview.MapPane - handleControllerChanges
+10:21:15.051 [AWT-EventQueue-0] DEBUG com.airbus.ds.mss.core.common.gisluciad.mapview.MapPane - Set controller
+10:21:17.367 [JavaFX Application Thread] DEBUG com.airbus.ds.mss.core.common.gisluciad.mapview.MapPane - handleControllerChanges
+10:21:17.367 [AWT-EventQueue-0] DEBUG com.airbus.ds.mss.core.common.gisluciad.mapview.MapPane - Set controller
+10:21:18.145 [JavaFX Application Thread] DEBUG com.airbus.ds.mss.core.common.gisluciad.mapview.MapPane - handleControllerChanges
+10:21:18.145 [AWT-EventQueue-0] DEBUG com.airbus.ds.mss.core.common.gisluciad.mapview.MapPane - Set controller
